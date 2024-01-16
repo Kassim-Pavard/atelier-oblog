@@ -1,0 +1,6 @@
+%syntax-version=1.0.0
+%project=oblog
+
+create 2024-01-10T08:56:15Z Yann <yann@oclock.io> # création de la bdd
+view 2024-01-11T08:58:19Z Yann <yann@oclock.io> # ajout d'une vue pour récupération dun post avec le label de la catégorie
+util_functions 2024-01-15T13:16:22Z Yann <yann@oclock.io> # fonction d'ajout et de mise à jour

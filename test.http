@@ -1,0 +1,46 @@
+@endpoint=http://localhost:3000/api
+
+### Resource Not Found
+GET {{endpoint}}/je-n-existe-pas
+
+### Récupération de tous les posts
+GET {{endpoint}}/posts
+
+### Récupération d'un post
+GET {{endpoint}}/posts/1
+
+### Ajout d'un post
+POST {{endpoint}}/posts
+Content-Type: application/json
+
+{
+  "title": "test article",
+  "slug": "test-article",
+  "category_id": 1
+}
+
+### Ajout d'un post en erreur
+POST {{endpoint}}/posts
+Content-Type: application/json
+
+{
+  "slug": "test-article",
+  "category_id": 1
+}
+
+### Modification d'un post
+PATCH {{endpoint}}/posts/2
+Content-Type: application/json
+
+{
+  "title": "test article 2"
+}
+
+### Suppression d'un post
+DELETE {{endpoint}}/posts/9
+
+### Récupération de toutes les catégories
+GET {{endpoint}}/categories
+
+### Récupération d'une catégorie
+GET {{endpoint}}/categories/1
